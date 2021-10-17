@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+  	<definition name="layout" template="/WEB-INF/views/common/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"></put-attribute>
+		<put-attribute name="nav" value="/WEB-INF/views/common/nav.jsp"></put-attribute>		
+		<put-attribute name="main" value=""></put-attribute>
+		<put-attribute name="adminMenu" value="/WEB-INF/views/common/adminMenu.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"></put-attribute>
+		<put-attribute name="side" value="/WEB-INF/views/common/adminMenu.jsp"></put-attribute>
+  	</definition>	
+  	
+	<!-- 회원가입폼 -->
+  	<definition name="/member/register" extends="layout">
+  		<put-attribute name="main" value="/WEB-INF/views/member/register.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- 로그인폼 -->
+  	<definition name="/member/login" extends="layout">
+  		<put-attribute name="main" value="/WEB-INF/views/member/login.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- 마이페이지 비밀번호 확인 폼 -->
+  	<definition name="/member/mypagePwdCheckForm" extends="layout">
+  		<put-attribute name="main" value="/WEB-INF/views/member/mypagePwdCheckForm.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- 마이페이지 폼 -->
+  	<definition name="/member/mypage" extends="layout">
+  		<put-attribute name="main" value="/WEB-INF/views/member/mypage.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- 비밀번호 찾기 폼 -->
+  	
+</tiles-definitions>
